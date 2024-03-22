@@ -1,0 +1,11 @@
+email_address = input("Enter your email address: ")
+def email_slicer(email):
+    
+    username, domain = email.split('@')
+    return username, domain
+
+
+username, domain = email_slicer(email_address)
+
+print("Username:", username)
+print("Domain:", domain)
